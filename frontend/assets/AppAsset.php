@@ -24,7 +24,8 @@ class AppAsset extends AssetBundle
         'css/site.css',
         'https://cdn.jsdelivr.net/npm/@simonwep/pickr/dist/themes/classic.min.css',
         'https://cdn.jsdelivr.net/npm/@simonwep/pickr/dist/themes/monolith.min.css',
-        'https://cdn.jsdelivr.net/npm/@simonwep/pickr/dist/themes/nano.min.css'
+        'https://cdn.jsdelivr.net/npm/@simonwep/pickr/dist/themes/nano.min.css',
+        'css/item.css'
     ];
 
     public $js = [
@@ -38,7 +39,9 @@ class AppAsset extends AssetBundle
         'js/mdb.js',
         'https://cdn.jsdelivr.net/npm/@simonwep/pickr/dist/pickr.min.js',
         'https://cdn.jsdelivr.net/npm/@simonwep/pickr/dist/pickr.es5.min.js',
-        'js/script.js'
+        'js/script.js',
+        'js_core/img.js',
+        'js_core/img_events.js'
     ];
     
     public $depends = [
