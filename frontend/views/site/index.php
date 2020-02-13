@@ -112,7 +112,7 @@ $this->title = 'Страница редактирования';
             <div class="container h-100">
                 <!-- FIXED START -->
                 <div class="row h-100">
-                    <div class="align-self-center main-svg">
+                    <div class="align-self-center main-svg" id="demo">
 
                     </div>
                     <!-- FIXED END -->
@@ -158,7 +158,7 @@ $this->title = 'Страница редактирования';
 
                         <div class="text-center flex-column">
                             <p class="m-0">Стиль</p>
-                            <button class="btn  btn--primary button-studio"><img src="img/16.svg"></button>
+                            <button id="underline" class="btn  btn--primary button-studio"><img src="img/16.svg"></button>
                             <button id="weight" class="btn btn--primary button-studio text-style"><img src="img/17.svg"></button>
                             <button id="style" class="btn btn--primary button-studio text-style"><img src="img/18.svg"></button>
 

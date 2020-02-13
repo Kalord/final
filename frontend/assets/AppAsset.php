@@ -40,8 +40,10 @@ class AppAsset extends AssetBundle
         'https://cdn.jsdelivr.net/npm/@simonwep/pickr/dist/pickr.min.js',
         'https://cdn.jsdelivr.net/npm/@simonwep/pickr/dist/pickr.es5.min.js',
         'js/script.js',
+        'js_core/editor.js',
         'js_core/img.js',
-        'js_core/img_events.js'
+        'js_core/img_events.js',
+        '//cdn.jsdelivr.net/npm/interactjs/dist/interact.min.js' //Library for interact
     ];
     
     public $depends = [

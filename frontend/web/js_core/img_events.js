@@ -16,6 +16,8 @@
                 html = JSON.parse(html);
                 $('.main-svg').empty();
                 $('.main-svg').append(html);
+
+                $('[contenteditable="true"]').click(editableHandler);
             }
         })
     });
