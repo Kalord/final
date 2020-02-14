@@ -93,14 +93,13 @@ $this->title = 'Страница редактирования';
 
                             <button class="btn btn--primary button-studio"><img src="img/12.svg"></button>
                             <button class="btn btn--primary button-studio"><img src="img/13.svg"></button>
-
+                            <input class="scale" type="text" placeholder="Scale" value="100">
                         </div>
 
                         <div class="text-center flex-column">
 
                             <button class="btn btn--primary button-studio"><img src="img/14.svg"></button>
-                            <button class="btn btn--primary button-studio save-button"><img src="img/15.svg"></button>
-
+                            <button class="save btn btn--primary button-studio save-button"><img src="img/15.svg"></button>
                         </div>
 
 
@@ -112,7 +111,7 @@ $this->title = 'Страница редактирования';
             <div class="container h-100">
                 <!-- FIXED START -->
                 <div class="row h-100">
-                    <div class="align-self-center main-svg" id="demo">
+                    <div class="align-self-center main-svg">
 
                     </div>
                     <!-- FIXED END -->
@@ -204,7 +203,6 @@ $this->title = 'Страница редактирования';
 
                         </div>
 
-
                     </div>
 
 
@@ -255,18 +253,18 @@ $this->title = 'Страница редактирования';
 
                                 <ul class="radio-list flex flex-column flex-gap-xxxs format-save">
                                     <li>
-                                        <input class="radio" type="radio" name="radioButton" id="radio12" checked>
+                                        <input class="format-save-item radio" type="radio" name="radioButton" id="radio12" value="png" checked>
                                         <label for="radio12">PNG</label>
                                     </li>
 
                                     <li>
-                                        <input class="radio" type="radio" name="radioButton" id="radio13">
-                                        <label for="radio13">Формат 1</label>
+                                        <input class="format-save-item radio" type="radio" name="radioButton" id="radio13" value="jpeg">
+                                        <label for="radio13">JPEG</label>
                                     </li>
 
                                     <li>
-                                        <input class="radio" type="radio" name="radioButton" id="radio14">
-                                        <label for="radio14">Формат 2</label>
+                                        <input class="format-save-item radio" type="radio" name="radioButton" id="radio14" value="pdf">
+                                        <label for="radio14">PDF</label>
                                     </li>
                                 </ul>
                             </fieldset>
@@ -274,9 +272,6 @@ $this->title = 'Страница редактирования';
                     </form>
 
                 </div>
-
-
-
             </div>
 
             <!-- end main content -->

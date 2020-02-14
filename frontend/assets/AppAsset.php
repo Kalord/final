@@ -33,6 +33,7 @@ class AppAsset extends AssetBundle
         'js/scripts.min.js',
         'js/util.js',
         'js/jquery.min.js',
+        'js_core/html2canvas.min.js',
         'js/popper.min.js',
         'js/bootstrap.min.js',
         'js/mdb.min.js',
@@ -43,6 +44,7 @@ class AppAsset extends AssetBundle
         'js_core/editor.js',
         'js_core/img.js',
         'js_core/img_events.js',
+        'js_core/save.js',
         '//cdn.jsdelivr.net/npm/interactjs/dist/interact.min.js' //Library for interact
     ];
     
