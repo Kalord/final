@@ -128,7 +128,7 @@ $this->title = 'Страница редактирования';
                         <div class="flex flex-column items-start ">
                             <label class="form-label margin-bottom-xxxs m-auto" for="selectThis">Шрифт:</label>
 
-                            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                            <button class="fonts btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
     Шрифт
   </button>
                         </div>
@@ -182,7 +182,7 @@ $this->title = 'Страница редактирования';
                             <label class="form-label margin-bottom-xxxs m-auto" for="selectThis">Скачать:</label>
 
 
-                            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample1" aria-expanded="false" aria-controls="collapseExample1">
+                            <button class="format-button btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample1" aria-expanded="false" aria-controls="collapseExample1">
    Формат
   </button>
 
@@ -212,27 +212,17 @@ $this->title = 'Страница редактирования';
 
                 </div>
 
-                <div class="collapse" id="collapseExample">
+                <div class="font-container collapse" id="collapseExample">
 
                     <form>
                         <div class=" p-4 card">
                             <fieldset>
                                 <legend class="form-legend">Выберете шрифт</legend>
 
-                                <ul class="radio-list flex flex-column flex-gap-xxxs">
+                                <ul class="fonts-list radio-list flex flex-column flex-gap-xxxs">
                                     <li>
-                                        <input class="radio" type="radio" name="radioButton" id="radio1" checked>
-                                        <label for="radio1">Шрифт 1</label>
-                                    </li>
-
-                                    <li>
-                                        <input class="radio" type="radio" name="radioButton" id="radio2">
-                                        <label for="radio2">Шрифт 2</label>
-                                    </li>
-
-                                    <li>
-                                        <input class="radio" type="radio" name="radioButton" id="radio3">
-                                        <label for="radio3">Шрифт 3</label>
+                                        <input data-src="uploads/fonts/comfortaa/Comfortaa[wght].ttf" class="fonts-item radio" type="radio" name="radioButton" id="radio1" checked>
+                                        <label for="radio1">Comfortaa</label>
                                     </li>
                                 </ul>
                             </fieldset>
@@ -244,7 +234,7 @@ $this->title = 'Страница редактирования';
 
 
 
-                <div class="collapse" id="collapseExample1">
+                <div class="format-container collapse" id="collapseExample1">
 
                     <form>
                         <div class=" p-4 card">

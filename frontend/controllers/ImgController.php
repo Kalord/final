@@ -7,6 +7,7 @@ use yii\web\Controller;
 use frontend\models\Img;
 use frontend\models\Category;
 use frontend\models\Html;
+use common\models\Font;
 
 class ImgController extends Controller
 {
@@ -47,6 +48,18 @@ class ImgController extends Controller
             $img = Img::getById((int)Yii::$app->request->get('id'));
             $html = Html::getById($img->id_html);
             echo json_encode($html->content);
+        }
+    }
+
+    /**
+     * Загрузка шрифтов
+     */
+    public function actionFont()
+    {
+        if(Yii::$app->request->isAjax)
+        {
+            $pivot = Yii::$app->request->get('pivot');
+            echo json_encode(Font::getPopular($pivot));
         }
     }
 };

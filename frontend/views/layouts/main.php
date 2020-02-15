@@ -17,17 +17,6 @@ AppAsset::register($this);
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <?php $this->registerCsrfMetaTags() ?>
     <title><?= Html::encode($this->title) ?></title>
-
-    <script>
-        document.getElementsByTagName("html")[0].className += " js";
-    </script>
-    <script>
-        if ('CSS' in window && CSS.supports('color', 'var(--color-var)')) {
-            document.write('<link rel="stylesheet" href="assets/css/style.css">');
-        } else {
-            document.write('<link rel="stylesheet" href="assets/css/style-fallback.css">');
-        }
-    </script>
     <?php $this->head() ?>
 </head>
 <body>
