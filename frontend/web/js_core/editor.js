@@ -124,8 +124,7 @@ const editSizeText = (event) => {
  * @param {object} event 
  */
 const editColor = (event) => {
-    let rgb = $('.pcr-picker').css('background').slice(0, 16);
-    $(CURRENT_EDIT_ELEMENT).css('color', rgb);
+    $(CURRENT_EDIT_ELEMENT).css('color', $('.pcr-result').val());
 };
 
 /**
@@ -145,3 +144,4 @@ $('.quantity').keyup(editSizeText);
 $('.size-tool').click(editSizeText);
 $('.pcr-save').click(editColor);
 $('.scale').keyup(scaleCanvas);
+$('.pcr-picker').mousemove(editColor);

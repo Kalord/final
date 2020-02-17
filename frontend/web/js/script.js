@@ -40,3 +40,8 @@ const pickr = Pickr.create({
         }
     }
 });
+
+
+$('.file-upload').file_upload();
+
+

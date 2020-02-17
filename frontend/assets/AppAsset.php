@@ -25,7 +25,8 @@ class AppAsset extends AssetBundle
         'https://cdn.jsdelivr.net/npm/@simonwep/pickr/dist/themes/classic.min.css',
         'https://cdn.jsdelivr.net/npm/@simonwep/pickr/dist/themes/monolith.min.css',
         'https://cdn.jsdelivr.net/npm/@simonwep/pickr/dist/themes/nano.min.css',
-        'css/item.css'
+        'css/item.css',
+        'css/desktopHd.css'
     ];
 
     public $js = [

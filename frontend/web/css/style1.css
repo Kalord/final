@@ -8983,3 +8983,23 @@ html:not(.js) .select .icon {
 .checkbox--bg:focus + label {
     background-color: hsla(var(--color-primary-h), var(--color-primary-s), var(--color-primary-l), 0.1)
 }
+
+html:not(.js) .file-upload__input {
+    display: none
+}
+
+.js .file-upload__input {
+    position: absolute;
+    clip: rect(1px, 1px, 1px, 1px);
+    -webkit-clip-path: inset(50%);
+    clip-path: inset(50%);
+    width: 1px;
+    height: 1px
+}
+
+.js .file-upload__text--has-max-width {
+    max-width: 200px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap
+}

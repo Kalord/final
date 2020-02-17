@@ -75,7 +75,7 @@
         pivot = $(pivot[pivot.length - 1]).attr('data-id');
 
         $.ajax({
-            type: 'GET',
+            type: 'POST',
             url: '/img/index',
             async: false,
             data: {

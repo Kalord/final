@@ -11,6 +11,8 @@ use common\models\Font;
 
 class ImgController extends Controller
 {
+    public $enableCsrfValidation = false;
+
     /**
      * Получение изображений
      */
@@ -19,8 +21,8 @@ class ImgController extends Controller
         if(Yii::$app->request->isAjax)
         {
             $imgs = Img::findImgByCategory(
-                (int)Yii::$app->request->get('id_category'),
-                (int)Yii::$app->request->get('pivot')
+                (int)Yii::$app->request->post('id_category'),
+                (int)Yii::$app->request->post('pivot')
             );
 
             echo json_encode($imgs);

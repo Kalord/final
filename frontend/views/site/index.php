@@ -86,20 +86,46 @@ $this->title = 'Страница редактирования';
 
                             <button class="btn btn--primary button-studio" aria-controls="sidebar"><img src="img/ListButton.svg"></button>
                             <button class="btn btn--primary button-studio"><img src="img/11.svg"></button>
-
                         </div>
 
                         <div class="text-center flex-column">
 
                             <button class="btn btn--primary button-studio"><img src="img/12.svg"></button>
                             <button class="btn btn--primary button-studio"><img src="img/13.svg"></button>
-                            <input class="scale" type="text" placeholder="Scale" value="100">
+                                                    <div class="m-5 def-number-input number-input safari_only" style="display: inline;">
+<button onclick="this.parentNode.querySelector('input[type=number]').stepDown()" class="minus size-tool"></button>
+<input class="scale" min="0" name="scale" value="100" type="number">
+<button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus size-tool"></button>
+</div>
+                       <!--       <div class="def-number-input number-input safari_only">
+                                <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()" class="minus size-tool"></button>
+                                <input class="scale" min="0" name="scale" value="100" type="number">
+                                <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus size-tool"></button>
+                            </div> -->
+                            
+                            
+                          <!--  <input class="scale" type="text" placeholder="Scale" value="100"> -->
                         </div>
 
                         <div class="text-center flex-column">
 
                             <button class="btn btn--primary button-studio"><img src="img/14.svg"></button>
+                            
+                            
+  <button class="save btn btn--primary button-studio save-button" type="button" id="dropdownMenuMenu" data-toggle="dropdown"
+    aria-haspopup="true" aria-expanded="false"> <img src="img/15.svg">
+  </button>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuMenu">
+    <button class="dropdown-item format-save-item" value="png" type="button">PNG</button>
+    <button class="dropdown-item format-save-item" value="jpeg" type="button">JPEG</button>
+    <button class="dropdown-item format-save-item" value="pdf" type="button">PDF</button>
+  </div>
+
+                            
+                            <!--
                             <button class="save btn btn--primary button-studio save-button"><img src="img/15.svg"></button>
+
+-->
                         </div>
 
 
@@ -108,17 +134,37 @@ $this->title = 'Страница редактирования';
 
             </div>
 
-            <div class="container h-100">
-                <!-- FIXED START -->
+            
+           <div class="container h-100">
+
+                <div class="row over h-100">
+                    <div class="align-self-center main-svg"> 
+ 
+           
+                    </div>
+
+
+            
+            
+            
+        <!--    <div class="container h-100">
+
                 <div class="row h-100">
                     <div class="align-self-center main-svg">
 
                     </div>
-                    <!-- FIXED END -->
+                
                 </div>
-            </div>
+            </div> -->
             <div class="position-absolute fixed-bottom">
+                
+                
 
+                          <!--    <div class="m-5 def-number-input number-input safari_only">
+                                <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()" class="minus size-tool"></button>
+                                <input class="scale quantity" min="0" name="quantity" value="100" type="number">
+                                <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus size-tool"></button>
+                            </div>-->
                 <div class="card w-100 a border-0 b">
 
 
@@ -126,7 +172,7 @@ $this->title = 'Страница редактирования';
                     <div class="d-flex card-body index justify-content-around c">
 
                         <div class="flex flex-column items-start ">
-                            <label class="form-label margin-bottom-xxxs m-auto" for="selectThis">Шрифт:</label>
+                            <label class="form-label label_color rgin-bottom-xxxs m-auto" for="selectThis">Шрифт:</label>
 
                             <button class="fonts btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
     Шрифт
@@ -134,7 +180,7 @@ $this->title = 'Страница редактирования';
                         </div>
 
                         <div class="text-center flex-column">
-                            <p class="m-0">A</p>
+                            <p class="m-0 label_color">A</p>
 
 
                             <button class=" btn color-picker button-studio btn--primary m"></button>
@@ -144,7 +190,7 @@ $this->title = 'Страница редактирования';
 
 
                         <div class="text-center flex-column">
-                            <p class="m-0">Размер</p>
+                            <p class="m-0 label_color">Размер</p>
                             <div class="def-number-input number-input safari_only">
                                 <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()" class="minus size-tool"></button>
                                 <input class="quantity" min="0" name="quantity" value="1" type="number">
@@ -156,7 +202,7 @@ $this->title = 'Страница редактирования';
 
 
                         <div class="text-center flex-column">
-                            <p class="m-0">Стиль</p>
+                            <p class="m-0 label_color">Стиль</p>
                             <button id="underline" class="btn  btn--primary button-studio"><img src="img/16.svg"></button>
                             <button id="weight" class="btn btn--primary button-studio text-style"><img src="img/17.svg"></button>
                             <button id="style" class="btn btn--primary button-studio text-style"><img src="img/18.svg"></button>
@@ -168,18 +214,32 @@ $this->title = 'Страница редактирования';
   
 <button class="btn btn--primary safe button-studio">Выбрать логотип</button>
 </div>-->
-                        <div class="text-center flex-column">
-                            <p class="m-0">Логотип</p>
+                   <div class="text-center flex-column">
+                            <p class="label_color m-0">Логотип</p>
 
-                            <input type="file" class="btn  btn--primary button-studio"><img src="img/16.svg"></input>
+                         <!--   <input type="file" class="btn  btn--primary button-studio"/> -->
+                            
+ <fieldset class="file-upload">
+  <label for="upload1" class="file-upload__label btn btn--subtle h-36">
+    <span class="file-upload__text file-upload__text--has-max-width">Upload a file</span>
+  </label>
+  
+  <input type="file" class="file-upload__input" name="upload1" id="upload1">
+</fieldset>
+
+
+                            
+                            
+                            
+                        
 
 
 
                         </div>
 
 
-                        <div class="flex flex-column items-start ">
-                            <label class="form-label margin-bottom-xxxs m-auto" for="selectThis">Скачать:</label>
+                    <!--    <div class="flex flex-column items-start ">
+                            <label class="label_color form-label margin-bottom-xxxs m-auto" for="selectThis">Скачать:</label>
 
 
                             <button class="format-button btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample1" aria-expanded="false" aria-controls="collapseExample1">
@@ -198,10 +258,10 @@ $this->title = 'Страница редактирования';
                                 <svg class="icon icon--xs margin-left-xxxs" aria-hidden="true" viewBox="0 0 16 16">
                                     <polygon points="3,5 8,11 13,5 "></polygon>
                                 </svg>
-                            </div> -->
+                            </div> 
 
 
-                        </div>
+                        </div> -->
 
                     </div>
 
@@ -212,12 +272,12 @@ $this->title = 'Страница редактирования';
 
                 </div>
 
-                <div class="font-container collapse" id="collapseExample">
+                <div class="font-container item-start collapse" id="collapseExample">
 
                     <form>
-                        <div class=" p-4 card">
+                        <div class=" block-font p-4 card">
                             <fieldset>
-                                <legend class="form-legend">Выберете шрифт</legend>
+                                <legend class="label_color form-legend">Выберете шрифт</legend>
 
                                 <ul class="fonts-list radio-list flex flex-column flex-gap-xxxs">
                                     <li>
@@ -234,7 +294,7 @@ $this->title = 'Страница редактирования';
 
 
 
-                <div class="format-container collapse" id="collapseExample1">
+              <!--  <div class="format-container collapse" id="collapseExample1">
 
                     <form>
                         <div class=" p-4 card">
@@ -261,7 +321,7 @@ $this->title = 'Страница редактирования';
                         </div>
                     </form>
 
-                </div>
+                </div>-->
             </div>
 
             <!-- end main content -->
